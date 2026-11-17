@@ -1,0 +1,80 @@
+/* Border-box reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Custom colour */
+:root {
+  --brand: #2965f1;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background: var(--brand);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background: #1e293b;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #f0b90b;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Sections */
+section {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+}
+
+/* Profile image */
+img {
+  max-width: 100%;
+  border-radius: 50%;
+  width: 140px;
+}
+
+/* Completed tasks */
+.done {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  #skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
